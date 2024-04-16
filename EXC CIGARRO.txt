@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+int main(){
+
+ int ano, dia, totalcigarro, cpd, maco, min;
+ float preco, totalpreco, precopc, hora, minpc, totalmin, totalhora;
+
+ printf("Anos como fumante:");
+ scanf("%d%*c", &ano);
+
+ printf("Preco do maco:");
+ scanf("%f%*c", &preco);
+
+ printf("Cigarros por dia:");
+ scanf("%d%*c", &cpd);
+
+
+ dia = 365*ano;
+
+ totalcigarro = dia*cpd;
+
+ printf("Total de cigarros fumados:%d\n", totalcigarro);
+
+ maco = 20;
+ precopc = preco/maco;
+
+ printf("Preço por cigarro: %f\n", precopc);
+
+ totalpreco = 0;
+ totalpreco = precopc*totalcigarro;
+
+ printf("Cigarros por dia: %d\n", cpd);
+
+ printf("Preco total gasto = %.2f\n", totalpreco);
+
+
+ min = 1;
+ minpc = 11*min;
+
+ totalmin = minpc*totalcigarro;
+
+ hora = min*60;
+
+ totalhora = totalmin/hora;
+
+ printf("Horas perdidas de vida: %.2f\n", totalhora);
+
+ return 0;
+
+}
